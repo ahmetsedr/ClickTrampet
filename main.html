@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+<div class="canvas symmetry">
+    <div class="circle circle2"></div>
+    <div class="circle"></div>
+    <div class="trumpet symmetry transform">
+        <div class="bodyP4 transform"></div>
+        <div class="bodyP2 transform"></div>
+        <div class="blower transform"></div>
+        <div class="bodyP3 transform"></div>
+        <div class="valveCluster symmetry transform">
+            <!--Sounds :)-->
+            <audio id="audio1" src="kesikTrampet/1.mp3" autostart="false"></audio>
+            <audio id="audio2" src="kesikTrampet/2.mp3" autostart="false"></audio>
+            <audio id="audio3" src="kesikTrampet/3.mp3" autostart="false"></audio>
+            <!--Sounds end :>-->
+            <div class="valve transform symmetry">
+                <label id="a" onclick="playSound1()" class="piston transform symmetry"></label>
+            </div>
+            <div class="valve valve3 transform symmetry">
+                <label id="b" onclick="playSound2()" class="piston transform symmetry"></label>
+            </div>
+            <div class="valve valve2 transform symmetry">
+                <label id="c" onclick="playSound3()" class="piston transform symmetry"></label>
+            </div>
+        </div>
+        <div class="bodyP1 transform"></div>
+        <div class="bell symmetry transform">
+            <div class="bellCurve1 transform"></div>
+            <div class="bellCurve1 flipHorizontal"></div>
+            <div class="bellFill transform"></div>
+            <div class="bellFill flipHorizontal"></div>
+            <div class="bellOuter transform symmetry"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
